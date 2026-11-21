@@ -168,6 +168,14 @@ export function ContactSection() {
                     {t(UI_COPY.hero.ctaResume)}
                   </Link>
 
+                  <a
+                    href="/CV_Lucky_Metha_Purnomo.pdf"
+                    download="CV_Lucky_Metha_Purnomo.pdf"
+                    className="inline-flex items-center gap-1.5 rounded-xl border border-zinc-200/80 px-3 py-1.5 text-xs font-semibold text-zinc-700 transition-colors hover:border-blue-500/50 hover:text-blue-600 dark:border-zinc-800 dark:text-zinc-300 dark:hover:border-blue-400/50 dark:hover:text-blue-400"
+                  >
+                    <span>CV PDF ↓</span>
+                  </a>
+
                   {PROFILE.linkedinUrl && (
                     <a
                       href={PROFILE.linkedinUrl}

@@ -126,11 +126,19 @@ export function HeroSection() {
 
               <Link
                 href="/resume"
-                className="inline-flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold text-zinc-600 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white"
+                className="inline-flex items-center gap-2 rounded-xl px-3.5 py-3 text-sm font-semibold text-zinc-600 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white"
               >
                 <FileText className="h-4 w-4" />
                 <span>{t(UI_COPY.hero.ctaResume)}</span>
               </Link>
+
+              <a
+                href="/CV_Lucky_Metha_Purnomo.pdf"
+                download="CV_Lucky_Metha_Purnomo.pdf"
+                className="inline-flex items-center gap-1.5 rounded-xl border border-zinc-200/80 bg-zinc-50/80 px-3.5 py-2.5 text-xs font-semibold text-zinc-700 transition-colors hover:border-blue-500/40 hover:text-blue-600 dark:border-zinc-800 dark:bg-zinc-900/80 dark:text-zinc-300 dark:hover:border-blue-400/40 dark:hover:text-blue-400"
+              >
+                <span>PDF ↓</span>
+              </a>
             </motion.div>
           </div>
 
