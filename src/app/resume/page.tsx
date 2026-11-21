@@ -46,11 +46,11 @@ export default function ResumePage() {
           </div>
 
           <a
-            href="/CV_Lucky_Metha_Purnomo.pdf"
-            download="CV_Lucky_Metha_Purnomo.pdf"
+            href="/CV_Lucky_Metha_Purnomo_V15.pdf"
+            download="CV_Lucky_Metha_Purnomo_V15.pdf"
             className="inline-flex items-center gap-2 rounded-xl border border-zinc-200 bg-white px-4 py-2 text-xs font-semibold text-zinc-800 shadow-xs transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
           >
-            <span>{lang === "id" ? "Unduh CV V14 (PDF)" : "Download CV V14 (PDF)"} ↓</span>
+            <span>{lang === "id" ? "Unduh CV V15 (PDF)" : "Download CV V15 (PDF)"} ↓</span>
           </a>
 
           <button
