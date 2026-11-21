@@ -18,6 +18,7 @@ export type ProjectCategory =
 
 export type MockupType =
   | "dretail-accounting"
+  | "dretail-web"
   | "combiphar-pwa"
   | "xauusd-smc";
 

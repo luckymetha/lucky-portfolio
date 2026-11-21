@@ -1,0 +1,1068 @@
+import type {
+  EducationItem,
+  ExperienceItem,
+  ProjectItem,
+  SkillGroup,
+} from "@/types/portfolio";
+
+export const PROFILE = {
+  name: "Lucky Metha Purnomo",
+  shortName: "Lucky Metha",
+  monogram: "LM",
+  location: "Bandung, Indonesia",
+  timezone: "Asia/Jakarta",
+  email: "Luckykiemp@gmail.com",
+  phoneDisplay: "+62 822-7859-0986",
+  whatsappNumber: "6282278590986",
+  photo: "/images/profile.jpg",
+  // Lengkapi URL LinkedIn & GitHub Anda di bawah ini kapan saja:
+  linkedinUrl: "https://www.linkedin.com/in/lucky-metha-purnomo-a14376219/",
+  linkedinDisplay: "linkedin.com/in/lucky-metha-purnomo-a14376219",
+  githubUrl: "https://github.com/luckymetha",
+  githubDisplay: "github.com/luckymetha",
+  portfolioUrl: "",
+  roleTagline: {
+    id: "Software Developer · Front-End & Full-Stack Web Developer · UI Specialist",
+    en: "Software Developer · Front-End & Full-Stack Web Developer · UI Specialist",
+  },
+  availability: {
+    id: "Terbuka untuk peluang Full-Time & Proyek Strategis",
+    en: "Open to Full-Time Roles & Select Collaborations",
+  },
+  heroTitlePrefix: {
+    id: "Merancang antarmuka",
+    en: "Crafting precision",
+  },
+  heroTitleAccent: {
+    id: "presisi",
+    en: "interfaces",
+  },
+  heroTitleSuffix: {
+    id: "& membangun sistem web full-stack.",
+    en: "& resilient full-stack systems.",
+  },
+  heroSubtitle: {
+    id: "Software Developer dan User Interface Specialist lulusan S1 Teknik Informatika UK Maranatha dengan pengalaman 5 tahun membangun aplikasi web produksi. Berkarir di dRetail untuk modul Inventory & Accounting POS, sekaligus kapabel secara Full-Stack dengan React, Next.js, Laravel, dan alur kerja berbantuan AI.",
+    en: "Software Developer and User Interface Specialist (B.Sc. Informatics, Maranatha Christian University) with 5 years of production web engineering experience. Currently building Inventory & Accounting systems at dRetail while shipping Full-Stack applications across React, Next.js, Laravel, and AI-augmented engineering workflows.",
+  },
+  summaryForResume: {
+    id: "Software Developer dan User Interface Specialist lulusan S1 Teknik Informatika Universitas Kristen Maranatha dengan pengalaman 5 tahun di bidang pengembangan aplikasi web. Saat ini berkarir sebagai Front-End Developer di dRetail dengan fokus pada pengembangan modul Inventory dan Accounting. Selain memiliki keahlian mendalam dalam merancang antarmuka yang interaktif dan ramah pengguna, saya juga kapabel membangun serta mengelola aplikasi web secara Full-Stack menggunakan React, Next.js, dan Laravel. Aktif mengintegrasikan optimalisasi AI dalam alur kerja pemrograman untuk menjaga kualitas kode, meminimalisir kesalahan, dan mempercepat penyelesaian proyek.",
+    en: "Software Developer and User Interface Specialist graduated with a Bachelor's degree in Informatics Engineering from Maranatha Christian University with 5 years of web application development experience. Currently working as a Front-End Developer at dRetail focusing on Inventory and Accounting modules. Beyond deep expertise in crafting interactive, user-centric interfaces, I build and maintain Full-Stack web applications using React, Next.js, and Laravel, actively integrating AI-assisted engineering workflows to maintain code quality, minimize regressions, and accelerate delivery.",
+  },
+  metrics: [
+    {
+      value: "5+",
+      label: { id: "Tahun Pengalaman", en: "Years Experience" },
+      detail: { id: "2021 – Sekarang · dRetail", en: "2021 – Present · dRetail" },
+    },
+    {
+      value: "12",
+      label: { id: "Produk & Eksperimen", en: "Shipped Works & Labs" },
+      detail: { id: "POS, CRM, Klinik, 3D & MT5", en: "POS, CRM, Clinic, 3D & MT5" },
+    },
+    {
+      value: "Full-Stack",
+      label: { id: "Lintas Platform Web", en: "End-to-End Engineering" },
+      detail: { id: "React · Next.js · Laravel · Flutter", en: "React · Next.js · Laravel · Flutter" },
+    },
+    {
+      value: "AI-First",
+      label: { id: "Alur Kerja Modern", en: "Augmented Workflow" },
+      detail: { id: "Presisi kode & delivery cepat", en: "High velocity & code rigor" },
+    },
+  ],
+};
+
+export const PROJECTS: ProjectItem[] = [
+  // ================= FEATURED PRODUCTION PROJECTS =================
+  {
+    id: "boostra",
+    slug: "boostra-ecommerce-crm",
+    section: "featured",
+    category: "ecommerce",
+    categoryLabel: { id: "E-Commerce & CRM", en: "E-Commerce & CRM" },
+    title: "BOOSTRA — Fuel Care E-Commerce & Buyer CRM",
+    subtitle: {
+      id: "Storefront e-commerce responsif, WhatsApp Closing Gate, dan dashboard Live Analytics & Buyer CRM.",
+      en: "Responsive e-commerce storefront with tiered checkout, WhatsApp Closing Gate, and real-time Buyer CRM.",
+    },
+    year: "2026",
+    role: { id: "Full-Stack & UI Developer", en: "Full-Stack & UI Developer" },
+    client: "BOOSTRA Fuel Care Technology",
+    liveUrl: "https://bootstra-demo.vercel.app/",
+    displayUrl: "bootstra-demo.vercel.app",
+    embeddable: true,
+    featuredBadge: { id: "Studi Kasus Unggulan", en: "Flagship Case Study" },
+    image: "/images/projects/boostra.png",
+    accentColor: "#f97316",
+    summary: {
+      id: "Ekosistem penjualan digital menyeluruh untuk aditif diesel modern yang menggabungkan storefront berkonversi tinggi, alur checkout wilayah berjenjang, serta ruang kendali analitik dan CRM pelanggan secara real-time.",
+      en: "End-to-end digital commerce system for a modern diesel additive brand combining a conversion-engineered storefront, hierarchical regional checkout, and a synchronized real-time analytics & buyer CRM console.",
+    },
+    challenge: {
+      id: "Penjualan produk otomotif melalui iklan berbayar sering kehilangan data prospek ketika pelanggan langsung berpindah ke WhatsApp. Tim sales membutuhkan alur checkout cepat sekaligus pelacakan atribusi iklan (GA4 & Meta Pixel) yang akurat.",
+      en: "Paid-acquisition automotive campaigns frequently lose attribution once buyers jump directly into WhatsApp chats. The sales team needed frictionless checkout paired with reliable conversion telemetry (GA4 & Meta Pixel) and structured lead tracking.",
+    },
+    solution: {
+      id: "Membangun antarmuka ganda (Storefront Konsumen + Dashboard Analisis & CRM) lengkap dengan WhatsApp Closing Gate yang menangkap data pembeli sebelum redirect, pemilihan wilayah administratif otomatis beserta kode pos, pembuatan invoice instan, serta event stream dispatcher.",
+      en: "Engineered a dual-workspace architecture (Consumer Storefront + Live Analytics & Buyer CRM) featuring a WhatsApp Closing Gate that captures lead metadata before handoff, hierarchical Indonesian administrative address autocomplete with automatic postal codes, instant invoice generation, and a unified analytics event dispatcher.",
+    },
+    highlights: {
+      id: [
+        "Storefront e-commerce dual-theme (Light/Dark) dengan keranjang belanja & checkout berjenjang (Provinsi → Kota → Kecamatan → Kode Pos otomatis).",
+        "Dashboard Live Analytics & Buyer CRM tersinkronisasi real-time untuk pemantauan omset, status follow-up leads, dan integrasi CS WhatsApp.",
+        "Segmentasi pelanggan otomatis antara pembeli Pribadi dan armada Fleet B2B lengkap dengan pembuatan invoice otomatis.",
+        "WhatsApp Closing Gate & event stream dispatcher untuk pelacakan konversi Google Analytics 4 (GA4) dan Meta Pixel.",
+      ],
+      en: [
+        "Dual-theme (Light/Dark) storefront with interactive cart and cascading administrative address selector with automatic postal codes.",
+        "Real-time synchronized Live Analytics & Buyer CRM dashboard tracking revenue, follow-up lead pipelines, and WhatsApp CS handoffs.",
+        "Automated buyer segmentation across Personal vs. Fleet B2B orders paired with instant invoice generation.",
+        "WhatsApp Closing Gate and unified event stream dispatcher feeding Google Analytics 4 (GA4) and Meta Pixel conversions.",
+      ],
+    },
+    impact: {
+      id: "Menjembatani funnel marketing, transaksi storefront, dan manajemen CRM tim CS dalam satu platform terintegrasi tanpa kebocoran data leads.",
+      en: "Unified paid marketing funnels, storefront checkout, and CS lead pipelines inside one cohesive system with zero lost lead attribution.",
+    },
+    techStack: [
+      "Tailwind CSS",
+      "Alpine.js",
+      "JavaScript",
+      "Buyer CRM",
+      "GA4 & Meta Pixel",
+      "WhatsApp API",
+    ],
+  },
+  {
+    id: "dretail-accounting",
+    slug: "dretail-accounting-backoffice",
+    section: "featured",
+    category: "enterprise",
+    categoryLabel: { id: "Enterprise & POS", en: "Enterprise & POS" },
+    title: "dRetail — Modul Accounting Backoffice",
+    subtitle: {
+      id: "Sistem akuntansi ritel enterprise: General Ledger, COA hierarkis, posting jurnal, dan cash clearance.",
+      en: "Enterprise retail accounting suite: General Ledger, hierarchical COA, journal posting, and financial reporting.",
+    },
+    year: "2021 – 2026",
+    role: { id: "Full-Stack & UI Developer", en: "Full-Stack & UI Developer" },
+    client: "dRetail POS Ecosystem",
+    liveUrl: "https://backoffice.dretail.id/admin",
+    displayUrl: "backoffice.dretail.id/admin",
+    embeddable: false,
+    featuredBadge: { id: "Sistem Enterprise", en: "Enterprise System" },
+    mockupType: "dretail-accounting",
+    accentColor: "#0284c7",
+    summary: {
+      id: "Modul backoffice inti untuk operasional keuangan merchant dRetail yang menyederhanakan alur pembukuan kompleks dari transaksi Point of Sale menjadi laporan keuangan terstruktur dan akurat.",
+      en: "Core backoffice financial engine powering dRetail POS merchants, translating high-volume point-of-sale activity into auditable ledgers, cash reconciliation, and structured financial statements.",
+    },
+    challenge: {
+      id: "Operasional akuntansi ritel melibatkan banyak cabang, struktur akun bertingkat, serta rekonsiliasi mutasi kas/bank harian. Antarmuka tradisional sering terasa berat dan rawan kesalahan input bagi staf non-akuntan.",
+      en: "Multi-outlet retail accounting involves deep account hierarchies, daily cash/bank reconciliation, and strict balancing rules. Conventional backoffice UIs overwhelm operators and increase manual entry errors.",
+    },
+    solution: {
+      id: "Merancang dan mengembangkan modul Accounting secara Full-Stack dengan struktur Chart of Accounts (COA) hierarkis, validasi keseimbangan debit-kredit real-time saat posting jurnal, alur cash clearance terpandu, serta tabel data berkinerja tinggi.",
+      en: "Architected and developed the Accounting module end-to-end with a hierarchical Chart of Accounts (COA) tree, real-time debit/credit balance validation during journal posting, guided cash-clearance workflows, and dense, scannable financial data grids.",
+    },
+    highlights: {
+      id: [
+        "General Ledger & Chart of Accounts (COA) hierarkis multi-level dengan pencarian dan filter cepat.",
+        "Alur posting jurnal manual maupun otomatis dari ekosistem transaksi POS & Inventory.",
+        "Manajemen mutasi kas/bank dan proses Cash Clearance untuk memastikan rekonsiliasi outlet akurat.",
+        "Penyusunan laporan keuangan komprehensif (Laba Rugi, Neraca, Arus Kas) yang siap audit.",
+      ],
+      en: [
+        "Multi-level hierarchical Chart of Accounts (COA) and General Ledger with instant filtering and drill-downs.",
+        "Automated POS-to-journal posting workflows alongside validated manual journal entries.",
+        "Cash/bank mutation ledgers and guided Cash Clearance workflows for multi-outlet reconciliation.",
+        "Comprehensive, audit-ready financial reporting including Income Statement, Balance Sheet, and Cash Flow.",
+      ],
+    },
+    impact: {
+      id: "Mempercepat proses tutup buku dan rekonsiliasi kas harian merchant ritel dalam ekosistem POS dRetail.",
+      en: "Streamlined daily cash reconciliation and period-end closing workflows across retail merchants on the dRetail POS platform.",
+    },
+    techStack: [
+      "React",
+      "Next.js",
+      "Laravel",
+      "TypeScript",
+      "PostgreSQL",
+      "REST API",
+    ],
+  },
+  {
+    id: "dretail-web",
+    slug: "dretail-official-website",
+    section: "featured",
+    category: "enterprise",
+    categoryLabel: { id: "Enterprise & POS", en: "Enterprise & POS" },
+    title: "dRetail Official Website & POS Showcase",
+    subtitle: {
+      id: "Situs web representatif ekosistem Point of Sale (POS) modern untuk bisnis F&B, Ritel, Service, dan Hotel.",
+      en: "Official brand showcase presenting dRetail's modern POS ecosystem across F&B, Retail, Services, and Hospitality.",
+    },
+    year: "2026",
+    role: { id: "UI Specialist & Web Developer", en: "UI Specialist & Web Developer" },
+    client: "dRetail Indonesia",
+    liveUrl: "https://dretail.id",
+    displayUrl: "dretail.id",
+    embeddable: false,
+    mockupType: "dretail-web",
+    accentColor: "#0ea5e9",
+    summary: {
+      id: "Wajah digital resmi dRetail yang mengomunikasikan ragam modul POS—mulai dari kasir online, inventaris, akuntansi, pembayaran digital, hingga integrasi ERP & hotel—dalam pengalaman web yang jernih dan persuasif.",
+      en: "Official web presence for dRetail presenting its full product ecosystem—cloud POS, digital ordering, payments, ERP, inventory, accounting, and hotel integration—through an approachable, conversion-oriented interface.",
+    },
+    challenge: {
+      id: "dRetail memiliki spektrum modul dan segmen bisnis yang sangat luas (F&B, Retail, Service, Sport & Entertainment, Hotel). Tantangannya adalah merangkum kekayaan fitur tersebut agar mudah dipahami calon pemilik bisnis dalam hitungan detik.",
+      en: "dRetail spans diverse verticals (F&B, Retail, Services, Sports & Entertainment, Hospitality) and 8+ software modules. The challenge was structuring complex B2B capabilities into an intuitive, fast-scanning showcase.",
+    },
+    solution: {
+      id: "Menyusun arsitektur informasi berbasis tipe bisnis dan katalog modul interaktif, dilengkapi matriks paket harga yang transparan, navigasi responsif, serta alur konsultasi langsung ke tim bisnis.",
+      en: "Designed a clear vertical-first and module-based information architecture with interactive feature breakdowns, transparent package/add-on pricing flows, responsive navigation, and direct sales consultation touchpoints.",
+    },
+    highlights: {
+      id: [
+        "Navigasi terstruktur berdasarkan Business Types (F&B, Retail, Service, Hotel) dan 8+ modul inti POS.",
+        "Desain antarmuka responsif dengan fokus pada kejelasan value proposition untuk pemilik bisnis ritel.",
+        "Integrasi katalog paket harga (Package & Add-On) serta tombol konsultasi WhatsApp cepat.",
+        "Optimalisasi struktur SEO untuk kata kunci aplikasi kasir online dan solusi POS bisnis.",
+      ],
+      en: [
+        "Structured navigation organized by Business Types (F&B, Retail, Services, Hotel) and 8+ core POS modules.",
+        "Responsive product showcase engineered around crisp visual hierarchy and B2B buyer clarity.",
+        "Transparent Package & Add-On pricing catalog paired with direct WhatsApp sales conversion triggers.",
+        "SEO-optimized markup targeting cloud POS, inventory, and retail automation discovery.",
+      ],
+    },
+    impact: {
+      id: "Memperkuat citra profesional ekosistem dRetail sebagai solusi otomasi bisnis ritel modern di Indonesia.",
+      en: "Elevated dRetail's digital brand credibility and simplified product discovery for prospective Indonesian retail merchants.",
+    },
+    techStack: [
+      "HTML5 / CSS3",
+      "JavaScript",
+      "Bootstrap",
+      "UI/UX Design",
+      "SEO Optimization",
+    ],
+  },
+  {
+    id: "elc-indonesia",
+    slug: "elc-indonesia-portal",
+    section: "featured",
+    category: "public-service",
+    categoryLabel: { id: "Edukasi & Layanan", en: "Education & Services" },
+    title: "ELC Indonesia — Web Portal Kursus & LPK",
+    subtitle: {
+      id: "Portal pelatihan kerja & kursus resmi sejak 1992 lengkap dengan verifikasi sertifikat dan dashboard siswa.",
+      en: "Official vocational training & course portal (Est. 1992) with certificate verification and student backoffice.",
+    },
+    year: "2026",
+    role: { id: "Full-Stack Developer", en: "Full-Stack Developer" },
+    client: "ELC Indonesia · LPK Ciparay",
+    liveUrl: "https://elc-web-app.vercel.app/",
+    displayUrl: "elc-web-app.vercel.app",
+    embeddable: true,
+    image: "/images/projects/elc-indonesia.png",
+    accentColor: "#0b1f3a",
+    summary: {
+      id: "Transformasi digital menyeluruh bagi lembaga kursus Bahasa Inggris, Komputer, dan LPK bersertifikat BNSP dengan pendekatan tipografi editorial berwibawa, portal verifikasi sertifikat publik, dan backoffice manajemen siswa.",
+      en: "Complete digital platform for an accredited English, Computer, and BNSP vocational training institute pairing editorial typography with public certificate verification, interactive curriculum exploration, and a student management backoffice.",
+    },
+    challenge: {
+      id: "Lembaga pendidikan dengan 5.000+ alumni memerlukan sistem untuk memvalidasi keaslian nomor sertifikat lulusan secara cepat bagi perusahaan perekrut, sekaligus memodernisasi pendaftaran peserta didik baru.",
+      en: "An institution with 5,000+ alumni needed a trustworthy public lookup tool for employers to verify certificate authenticity while modernizing program discovery and online admissions.",
+    },
+    solution: {
+      id: "Membangun aplikasi web berbasis React dengan bahasa visual akademik-editorial (Plus Jakarta Sans & Instrument Serif), fitur cek nomor sertifikat instan, katalog kurikulum & biaya interaktif, portal siswa, serta panel admin.",
+      en: "Built a React web application with refined academic-editorial typography (Plus Jakarta Sans + Instrument Serif), real-time official certificate verification, interactive curriculum & tuition breakdowns, a Student Portal, and an Admin Backoffice.",
+    },
+    highlights: {
+      id: [
+        "Fitur Verifikasi Nomor Sertifikat resmi secara online untuk alumni dan verifikator HRD.",
+        "Katalog program & kurikulum interaktif (Bahasa Inggris, Komputer & IT, LPK BNSP) beserta informasi biaya.",
+        "Formulir pendaftaran online terintegrasi serta tombol konsultasi admin WhatsApp.",
+        "Portal Siswa & Backoffice Dashboard Admin untuk pengelolaan data peserta dan sertifikasi.",
+      ],
+      en: [
+        "Public online official Certificate Number Verification system for alumni and employer HR verification.",
+        "Interactive program and curriculum explorer (English, Office IT, BNSP Vocational) with clear tuition info.",
+        "Streamlined online registration flow paired with direct WhatsApp admissions consultation.",
+        "Dedicated Student Portal and Admin Backoffice for managing enrollments and certification records.",
+      ],
+    },
+    impact: {
+      id: "Meningkatkan kepercayaan institusi terakreditasi Disnaker & Disdik sekaligus memangkas proses administrasi pendaftaran manual.",
+      en: "Strengthened institutional credibility for an accredited Disnaker & Disdik training center while cutting manual admissions friction.",
+    },
+    techStack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite",
+      "Certificate Verification",
+      "Admin Backoffice",
+    ],
+  },
+  {
+    id: "klinik-kosim",
+    slug: "sistem-informasi-klinik-kosim",
+    section: "featured",
+    category: "public-service",
+    categoryLabel: { id: "Edukasi & Layanan", en: "Education & Services" },
+    title: "Sistem Informasi Klinik Dr. Kosim Syarif",
+    subtitle: {
+      id: "Portal layanan kesehatan digital: rekam medis elektronik, antrean mandiri online, layar TV, dan dashboard staf.",
+      en: "Digital clinic management system with electronic medical records, live patient queues, TV display, and staff dashboard.",
+    },
+    year: "2026",
+    role: { id: "Full-Stack Developer", en: "Full-Stack Developer" },
+    client: "Klinik Dokter Al-Malik 1 · Ciparay",
+    liveUrl: "https://klinik-kosim-syarif.vercel.app/",
+    displayUrl: "klinik-kosim-syarif.vercel.app",
+    embeddable: true,
+    image: "/images/projects/klinik-kosim.png",
+    accentColor: "#0284c7",
+    summary: {
+      id: "Sistem informasi klinik terpadu berbasis React untuk Klinik Dokter Al-Malik 1 (dr. H. Kosim Syarief, MKM) yang menghubungkan pendaftaran pasien mandiri, monitor antrean ruang tunggu, dan pencatatan medis staf.",
+      en: "Integrated React healthcare system for Klinik Dokter Al-Malik 1 connecting self-service online patient queuing, waiting-room TV displays, staff clinical dashboards, and electronic medical record workflows.",
+    },
+    challenge: {
+      id: "Antrean fisik di fasilitas kesehatan tingkat pertama sering menimbulkan penumpukan di ruang tunggu serta ketidaksinkronan antara loket pendaftaran, dokter pemeriksa, dan pencatatan rekam medis.",
+      en: "Primary-care clinics often struggle with waiting-room congestion and fragmented handoffs between front-desk registration, patient calling, and medical record documentation.",
+    },
+    solution: {
+      id: "Merancang antarmuka kesehatan yang tenang, aksesibel, dan berbasis peran (Pasien/Publik vs Staf Medis) lengkap dengan monitor nomor antrean live, mode Layar TV ruang tunggu, pendaftaran online, dan pencatatan rekam medis.",
+      en: "Designed a calm, accessible role-aware healthcare interface (Public Patient Portal vs. Clinical Staff Dashboard) featuring live queue status cards, a dedicated Waiting-Room TV mode, online ticketing, and structured medical record management.",
+    },
+    highlights: {
+      id: [
+        "Monitor status antrean real-time (Sedang Diperiksa, Menunggu, Selesai) lengkap dengan fitur panggilan suara & Layar TV.",
+        "Pendaftaran nomor antrean online mandiri bagi pasien langsung dari smartphone sebelum datang ke klinik.",
+        "Pemisahan peran akses yang rapi antara Portal Pasien dan Dashboard Staf & Dokter.",
+        "Pencatatan rekam medis elektronik dan alur pelayanan kesehatan terstandar.",
+      ],
+      en: [
+        "Live queue telemetry (In Examination, Waiting, Completed) with voice-call integration and dedicated Waiting-Room TV mode.",
+        "Self-service online queue registration allowing patients to book numbers from home via mobile.",
+        "Clean role-based workspace switching between Public Patient Portal and Staff/Doctor Dashboard.",
+        "Standardized electronic medical records and digital prescription/consultation workflows.",
+      ],
+    },
+    impact: {
+      id: "Memperpendek waktu tunggu pasien dan menghadirkan pengalaman layanan kesehatan lokal yang modern dan transparan.",
+      en: "Reduced waiting-room bottlenecks and delivered a transparent, modern patient experience for the Ciparay community.",
+    },
+    techStack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Electronic Medical Records",
+      "Live Queue System",
+      "Role-Based UI",
+    ],
+  },
+  {
+    id: "sinovel",
+    slug: "sinovel-ebook-audiobook",
+    section: "featured",
+    category: "app",
+    categoryLabel: { id: "Web & Mobile App", en: "Web & Mobile App" },
+    title: "SiNovel — Interactive E-Book & Audiobook App",
+    subtitle: {
+      id: "Platform baca novel digital berbasis React dengan narasi audio Web Speech, ambient BGM, dan kontrol tipografi.",
+      en: "Interactive React novel reader featuring Web Speech narration, ambient soundscapes, and curated typography controls.",
+    },
+    year: "2026",
+    role: { id: "Full-Stack & UI Developer", en: "Full-Stack & UI Developer" },
+    client: "Independent Product",
+    liveUrl: "https://si-novel.vercel.app/",
+    displayUrl: "si-novel.vercel.app",
+    embeddable: true,
+    image: "/images/projects/sinovel.png",
+    accentColor: "#6366f1",
+    summary: {
+      id: "Aplikasi pembaca novel web imersif yang menggabungkan katalog karya asli multi-genre, pengalaman membaca adaptif (font serif/sans, mode gelap/terang, tracking menit baca), serta fitur Audiobook & BGM.",
+      en: "Immersive web novel platform combining a multi-genre digital catalog, customizable reading ergonomics (serif/sans fonts, light/dark modes, reading-time telemetry), and integrated Web Speech audiobook & ambient BGM.",
+    },
+    challenge: {
+      id: "Pengalaman membaca teks panjang di browser sering melelahkan mata dan terasa statis. Dibutuhkan UI pembaca yang ergonomis, cepat, sekaligus menawarkan dimensi audio untuk konsumsi hands-free.",
+      en: "Long-form browser reading often causes eye fatigue and feels flat. The goal was crafting an ergonomic, distraction-free reader enriched with audio narration and ambient soundscapes.",
+    },
+    solution: {
+      id: "Membangun SPA berbasis React dengan katalog filter genre & rating usia, halaman detail bab, mesin pembaca yang menyimpan progres otomatis, narasi Web Speech API, pengatur BGM, serta fitur tulis/impor novel.",
+      en: "Built a React SPA with instant genre and age-rating catalog filters, chapter management, persistent reading progress tracking, Web Speech audio narration, ambient BGM controls, and a writer/import flow.",
+    },
+    highlights: {
+      id: [
+        "Katalog novel interaktif dengan pencarian, filter multi-genre, filter rating usia, dan koleksi pribadi.",
+        "Pengalaman membaca premium dengan pilihan tipografi klasik (Lora, Merriweather, Playfair Display) & dual theme.",
+        "Integrasi narasi Audiobook berbasis Web Speech & ambient BGM soundscapes untuk imersi penuh.",
+        "Pelacakan durasi baca otomatis, fitur Lanjut Membaca, dan modul Tulis / Impor Novel.",
+      ],
+      en: [
+        "Interactive novel catalog with instant search, multi-genre filtering, age-rating filters, and personal library.",
+        "Premium reading ergonomics supporting classic literary fonts (Lora, Merriweather, Playfair Display) & dual themes.",
+        "Integrated Web Speech audiobook narration and NCS ambient BGM soundscapes for deeper immersion.",
+        "Automatic reading-time tracker, Resume Reading continuity, and Write/Import Novel studio tools.",
+      ],
+    },
+    impact: {
+      id: "Menghadirkan standar kualitas UI produk consumer publishing yang halus dan nyaman untuk sesi baca berdurasi panjang.",
+      en: "Delivered consumer-grade digital publishing UX engineered for comfort across extended multi-chapter reading sessions.",
+    },
+    techStack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Web Speech API",
+      "Audio & BGM Engine",
+      "Local Persistence",
+    ],
+  },
+  {
+    id: "combiphar-pwa",
+    slug: "pwa-combiphar-rd",
+    section: "featured",
+    category: "app",
+    categoryLabel: { id: "Web & Mobile App", en: "Web & Mobile App" },
+    title: "PWA Combiphar R&D",
+    subtitle: {
+      id: "Progressive Web App (PWA) berbasis Flutter untuk menunjang operasional divisi Research & Development Combiphar.",
+      en: "Flutter-powered Progressive Web App engineered to support Combiphar's Research & Development operational workflows.",
+    },
+    year: "2025",
+    role: { id: "Full-Stack Developer", en: "Full-Stack Developer" },
+    client: "Combiphar — R&D Division",
+    displayUrl: "combiphar-rd.internal.app",
+    embeddable: false,
+    mockupType: "combiphar-pwa",
+    accentColor: "#10b981",
+    summary: {
+      id: "Aplikasi Progressive Web App lintas perangkat yang dibangun menggunakan Flutter untuk membantu tim Research & Development Combiphar dalam pencatatan, pemantauan sampel, dan koordinasi operasional laboratorium.",
+      en: "Cross-device Progressive Web App built with Flutter to streamline operational tracking, sample logging, and internal workflow coordination for Combiphar's pharmaceutical Research & Development division.",
+    },
+    challenge: {
+      id: "Tim R&D membutuhkan aplikasi yang dapat langsung diakses dari desktop maupun tablet laboratorium tanpa hambatan instalasi app store, namun tetap memiliki responsivitas setara aplikasi native.",
+      en: "Pharmaceutical R&D teams needed an application immediately accessible across lab tablets and desktops without app-store distribution overhead, while maintaining native-grade responsiveness.",
+    },
+    solution: {
+      id: "Merancang dan mengimplementasikan Progressive Web App (PWA) menggunakan Flutter Web dengan antarmuka bersih yang optimal di layar sentuh, dukungan installable web manifest, serta integrasi REST API terstruktur.",
+      en: "Architected and delivered a Flutter-based Progressive Web App with touch-friendly operational forms, installable PWA capabilities, structured state management, and clean REST API integration.",
+    },
+    highlights: {
+      id: [
+        "Arsitektur Flutter PWA satu basis kode yang berjalan konsisten di desktop, tablet, dan perangkat mobile.",
+        "Antarmuka operasional bersih dan terstruktur untuk meminimalkan kesalahan input data R&D.",
+        "Dukungan instalasi cepat (Add to Home Screen) dan performa caching PWA yang responsif.",
+        "Integrasi alur data backend & validasi form operasional sesuai kebutuhan tim laboratorium.",
+      ],
+      en: [
+        "Single-codebase Flutter PWA delivering consistent performance across desktop browsers and lab tablets.",
+        "Clean, structured operational UI designed to reduce manual logging friction in R&D routines.",
+        "Installable PWA experience with fast load performance and touch-friendly controls.",
+        "Structured REST API integration and validation aligned with internal division standards.",
+      ],
+    },
+    impact: {
+      id: "Memodernisasi pencatatan operasional internal divisi R&D dengan deployment web yang praktis dan lintas perangkat.",
+      en: "Modernized internal R&D operational workflows with frictionless, cross-device web deployment.",
+    },
+    techStack: [
+      "Flutter",
+      "Dart",
+      "Progressive Web App",
+      "REST API",
+      "Responsive UI",
+    ],
+  },
+
+  // ================= EXPERIMENTS & INTERACTIVE LABS =================
+  {
+    id: "undangan-digital",
+    slug: "digital-wedding-invitation",
+    section: "labs",
+    category: "app",
+    categoryLabel: { id: "Pixel-Perfect Slicing", en: "Pixel-Perfect Slicing" },
+    title: "Digital Wedding Invitation — Hani & Andi",
+    subtitle: {
+      id: "Slicing pixel-perfect dari artboard Adobe Illustrator menjadi undangan web interaktif dengan personalisasi tamu & RSVP.",
+      en: "Pixel-perfect slicing from Adobe Illustrator artboards into an interactive digital invitation with dynamic guest URLs & RSVP.",
+    },
+    year: "2026",
+    role: { id: "Front-End & UI Specialist", en: "Front-End & UI Specialist" },
+    client: "UI Craft & Front-End Competency",
+    displayUrl: "local-lab/undangan-digital",
+    embeddable: false,
+    image: "/images/projects/undangan-digital.png",
+    accentColor: "#c86d32",
+    summary: {
+      id: "Implementasi slicing presisi tinggi dari desain cetak/vektor penuh ornamen (Adobe Illustrator) ke web responsif dengan custom webfont kaligrafi, animasi gulir halus, galeri lightbox, dan logika form RSVP kondisional.",
+      en: "High-precision slicing converting intricate ornamental Adobe Illustrator artboards into a fluid responsive web invitation featuring custom calligraphy webfonts, scroll choreography, lightbox galleries, and conditional RSVP flows.",
+    },
+    challenge: {
+      id: "Menjaga kesetiaan visual 1:1 terhadap desain vektor klasik penuh ornamen bunga, pola damask, border zigzag, dan tipografi kustom di berbagai ukuran viewport tanpa mengorbankan performa muat.",
+      en: "Preserving 1:1 visual fidelity for ornate botanical illustrations, damask patterns, traditional zigzag borders, and bespoke typography across desktop and mobile viewports while staying lightweight.",
+    },
+    solution: {
+      id: "Mengekstrak aset grafis & font kustom (Madina, Baskerville, Garamond, Operetta), membangun tata letak responsif dengan CSS Variables + Bootstrap 4, serta menambahkan interaksi nyata seperti countdown live, parameter `?to=Nama+Tamu`, Swiper + Fancybox, dan toast salin rekening.",
+      en: "Extracted bespoke art assets and custom webfonts (Madina, Baskerville, Garamond, Operetta), constructed responsive CSS Variable layouts, and engineered rich micro-interactions including live countdown, `?to=` guest personalization, Swiper + Fancybox galleries, conditional RSVP, and realtime wishes.",
+    },
+    highlights: {
+      id: [
+        "Verifikasi visual pixel-by-pixel melawan artboard desain asli pada viewport desktop (1366/1440/1920) & mobile (390px).",
+        "Personalisasi nama tamu otomatis lewat parameter URL (`?to=Nama+Tamu`) hingga auto-fill form RSVP.",
+        "Logika RSVP kondisional, fitur salin rekening cashless gift dengan toast popup, serta Wedding Wishes realtime.",
+        "Galeri interaktif berbasis Swiper 11, zoom layar penuh Fancybox 3, dan animasi gulir AOS.",
+      ],
+      en: [
+        "Pixel-accurate visual verification against original artboards across desktop (1366/1440/1920) and mobile (390px).",
+        "Dynamic guest name personalization via URL query parameters (`?to=Guest+Name`) synced into the RSVP form.",
+        "Conditional RSVP attendance logic, one-click cashless gift copy with toast feedback, and realtime wishes feed.",
+        "Touch-friendly Swiper 11 carousel, Fancybox 3 fullscreen lightbox zoom, and AOS scroll choreography.",
+      ],
+    },
+    impact: {
+      id: "Membuktikan ketajaman mata UI Specialist dalam menerjemahkan desain visual kompleks menjadi kode front-end presisi.",
+      en: "Demonstrates exacting UI Specialist craftsmanship in translating complex editorial artwork into production-grade front-end code.",
+    },
+    techStack: [
+      "HTML5 & CSS3",
+      "Bootstrap 4",
+      "jQuery",
+      "Swiper 11",
+      "Fancybox 3",
+      "AOS",
+    ],
+  },
+  {
+    id: "xauusd-smc",
+    slug: "xauusd-smc-probability-monitor",
+    section: "labs",
+    category: "enterprise",
+    categoryLabel: { id: "Algorithmic & Quant Lab", en: "Algorithmic & Quant Lab" },
+    title: "XAUUSD SMC Probability & False Risk Monitor",
+    subtitle: {
+      id: "Indikator MQL5 MetaTrader 5 untuk Gold (XAUUSD) dengan deteksi Smart Money Concept & Dynamic Invalidation Engine.",
+      en: "MetaTrader 5 (MQL5) Gold indicator combining Smart Money Concepts with a real-time Dynamic False Signal Risk Engine.",
+    },
+    year: "2026",
+    role: { id: "Algorithmic Developer & HUD Designer", en: "Algorithmic Developer & HUD Designer" },
+    client: "Quantitative Trading R&D",
+    displayUrl: "mt5/XAUUSD_SMC_Monitor.mq5",
+    embeddable: false,
+    mockupType: "xauusd-smc",
+    accentColor: "#f59e0b",
+    summary: {
+      id: "Plugin indikator & Heads-Up Display (HUD) dark-mode untuk MetaTrader 5 khusus XAUUSD yang menghitung skor probabilitas konfluensi (0–100%) dan memantau persentase risiko sinyal palsu secara dinamis per tick.",
+      en: "Custom MetaTrader 5 indicator and on-chart dark-mode HUD tailored for XAUUSD (Gold) that scores institutional Smart Money confluences (0–100%) and dynamically tracks false-signal invalidation risk in real time.",
+    },
+    challenge: {
+      id: "Indikator teknikal konvensional sering memicu sinyal palsu akibat noise sumbu lilin tunggal dan tidak memberi tahu trader ketika probabilitas setup mulai melemah sebelum Stop Loss tersentuh.",
+      en: "Conventional retail indicators fire noisy single-candle alerts without quantifying structural confluence or warning traders when a setup's validity decays before hitting Stop Loss.",
+    },
+    solution: {
+      id: "Mengembangkan mesin struktur SMC berbasis MQL5 (Liquidity Sweep, Order Block Mitigation, Displacement ATR, CHoCH/BOS), dilengkapi Dynamic Invalidation Engine (penalti jarak SL, momentum TP, stagnasi waktu), garis orbital SL/TP1/TP2 otomatis, dan alert audio multi-kondisi.",
+      en: "Engineered a native MQL5 SMC engine detecting Liquidity Sweeps, Order Block Mitigations, ATR-normalized Displacement, and CHoCH/BOS, paired with a Dynamic False Risk Engine (SL proximity penalty, momentum decay, stagnation decay), orbital SL/TP1/TP2 chart levels, and audio/push alerts.",
+    },
+    highlights: {
+      id: [
+        "Deteksi sekuens struktur SMC: Liquidity Sweep, Order Block Mitigation, ATR Displacement, dan CHoCH/BOS.",
+        "Kalkulasi kuantitatif Confluence Score (0–100%) serta Dynamic False Signal Risk berkode warna (Low / Moderate / High / Invalidated).",
+        "Penggambaran presisi garis koordinat X-Y untuk level ENTRY, SL, TP1 (1:1.5), dan TP2 (1:2.5) lengkap dengan pips.",
+        "Auto-cleanup garis target & penanda pembatalan instan jika SL tertembus, plus alert suara & push notification HP.",
+      ],
+      en: [
+        "Multi-stage SMC pattern detection: Liquidity Sweeps, Order Block Mitigation, ATR Displacement, and CHoCH/BOS.",
+        "Quantitative 0–100% Confluence Scoring paired with color-coded live Dynamic False Risk tracking.",
+        "Precision coordinate-anchored orbital level lines for ENTRY, SL, TP1 (1:1.5), and TP2 (1:2.5) with pip metrics.",
+        "Automatic chart invalidation cleanup on SL breach plus differentiated audio cues and mobile MT5 push alerts.",
+      ],
+    },
+    impact: {
+      id: "Memperlihatkan fleksibilitas rekayasa sistem di luar web—mencakup pemrograman C-like (MQL5), pemodelan probabilitas real-time, dan desain HUD finansial.",
+      en: "Showcases systems engineering breadth beyond web apps—spanning C-like MQL5 programming, real-time probabilistic modeling, and financial HUD design.",
+    },
+    techStack: [
+      "MQL5",
+      "MetaTrader 5",
+      "Smart Money Concepts",
+      "Real-Time HUD",
+      "PowerShell Automation",
+    ],
+  },
+  {
+    id: "chrono-pusaka-3d",
+    slug: "chrono-pusaka-3d-webgl",
+    section: "labs",
+    category: "app",
+    categoryLabel: { id: "3D WebGL Experiment", en: "3D WebGL Experiment" },
+    title: "Chrono Pusaka 3D — WebGL Action RPG",
+    subtitle: {
+      id: "Game RPG 3D berbasis Three.js WebGL bertema pendekar Nusantara dengan 12 spesialisasi elemen & animasi sinematik.",
+      en: "Three.js WebGL 3D Nusantara martial-arts RPG featuring 12 elemental subclasses, turn-based combat, and anime cut-ins.",
+    },
+    year: "2026",
+    role: { id: "Creative Developer & Game Architect", en: "Creative Developer & Game Architect" },
+    client: "Interactive 3D Lab",
+    displayUrl: "local-lab/chrono-pusaka-3d",
+    embeddable: false,
+    image: "/images/projects/chrono-pusaka-3d.png",
+    accentColor: "#06b6d4",
+    summary: {
+      id: "Eksperimen kreatif WebGL 3D penuh di browser tanpa game engine berat: memadukan pemodelan 3D prosedural Three.js, sistem pertarungan party bergaya Suikoden, kamera sinematik jurus, dan cerita perjalanan waktu Nusantara.",
+      en: "Full browser-native 3D WebGL experiment built directly on Three.js without heavyweight engines: combining procedural 3D character models, Suikoden-inspired party turn-based battles, cinematic skill cameras, and Nusantara time-travel lore.",
+    },
+    challenge: {
+      id: "Membangun pengalaman RPG 3D yang responsif langsung di browser dengan VFX jurus elemental, sistem giliran party, cut-in animasi, dan penyimpanan progres lokal menggunakan Vanilla JS + Three.js.",
+      en: "Engineering a responsive browser 3D RPG complete with elemental particle VFX, multi-actor turn queues, dramatic anime cut-ins, and save/load state purely with Vanilla JS and Three.js.",
+    },
+    solution: {
+      id: "Merancang arsitektur modular (`models3d.js`, `vfx3d.js`, `data.js`, `main.js`) berisi 4 kelas utama × 3 cabang elemen (12 sub-kelas), pohon jurus Lv.1–Lv.5, Unite Attack gabungan, proyeksi popup damage 3D→2D, serta HUD eksplorasi dunia.",
+      en: "Structured a clean modular architecture (`models3d.js`, `vfx3d.js`, `data.js`, `main.js`) powering 4 base classes × 3 elemental branches (12 specializations), Lv.1–5 skill trees, party Unite Attacks, 3D-to-2D projected damage popups, and exploration HUDs.",
+    },
+    highlights: {
+      id: [
+        "Engine WebGL Three.js dengan karakter 3D prosedural, efek partikel elemental (`vfx3d.js`), dan kamera sinematik letterbox.",
+        "12 spesialisasi kelas & elemen (Api, Es, Petir, Angin, Bumi, Racun, Bayangan) lengkap dengan pohon jurus True Rune.",
+        "Sistem pertarungan turn-based party bergaya Suikoden dengan combo counter, cut-in banner, dan Unite Attack.",
+        "Eksplorasi peta 3D (Desa Karangwulan, Hutan Larangan, Candi Kegelapan) dengan kontrol WASD & quick-save lokal.",
+      ],
+      en: [
+        "Three.js WebGL renderer with procedural 3D character models, custom elemental particle VFX, and letterboxed cinematic cameras.",
+        "12 playable elemental specializations across 4 core classes with progressive True Rune skill trees.",
+        "Suikoden-inspired turn-based party combat featuring multi-hit combo counters, cut-in banners, and Unite Attacks.",
+        "3D world exploration across Nusantara-themed zones with WASD navigation, NPC interaction, and local save persistence.",
+      ],
+    },
+    impact: {
+      id: "Menunjukkan penguasaan grafika web interaktif (WebGL/Three.js), manajemen state kompleks, dan desain HUD game.",
+      en: "Highlights strong command over interactive WebGL graphics, complex real-time state loops, and expressive game UI design.",
+    },
+    techStack: [
+      "Three.js",
+      "WebGL",
+      "JavaScript ES6",
+      "Procedural 3D VFX",
+      "Custom RPG HUD",
+    ],
+  },
+  {
+    id: "animal-food-sorter",
+    slug: "pesta-porsi-hewan",
+    section: "labs",
+    category: "app",
+    categoryLabel: { id: "EdTech Interactive Game", en: "EdTech Interactive Game" },
+    title: "Pesta Porsi Hewan (Animal Food Sorter)",
+    subtitle: {
+      id: "Game edukasi interaktif berbasis Vue 3 untuk melatih logika pengurutan ukuran & berat makanan hewan bagi anak.",
+      en: "Playful Vue 3 educational sorting game teaching children size/weight comparison with tactile 3D UI and audio feedback.",
+    },
+    year: "2026",
+    role: { id: "Front-End & Gamification Developer", en: "Front-End & Gamification Developer" },
+    client: "Interactive EdTech Lab",
+    displayUrl: "local-lab/animal-food-sorter",
+    embeddable: false,
+    image: "/images/projects/animal-food-sorter.png",
+    accentColor: "#f59e0b",
+    summary: {
+      id: "Aplikasi game edukasi ramah anak dengan gaya tombol 3D taktil, 5 level bertahap + mode Acak Seru, kamus makanan interaktif, petunjuk berat opsional, serta perayaan confetti & efek suara ceria.",
+      en: "Child-friendly educational web game featuring tactile 3D buttons, 5 progressive levels plus randomized challenges, an interactive food encyclopedia, optional weight hints, and celebratory confetti & sound effects.",
+    },
+    challenge: {
+      id: "Merancang antarmuka permainan edukatif yang langsung intuitif dimainkan anak-anak lewat klik maupun drag-and-drop, dengan umpan balik visual yang mendorong rasa ingin tahu tanpa membingungkan.",
+      en: "Designing an immediately intuitive educational UI usable by young learners via both click and drag-and-drop interactions, delivering clear visual encouragement without clutter.",
+    },
+    solution: {
+      id: "Membangun aplikasi reaktif dengan Vue 3 dan Tailwind CSS, melengkapi fitur bantu 1 urutan otomatis, toggle petunjuk berat gram, tab Kamus Makanan (12 entri), pelacakan bintang per level, serta efek Canvas Confetti.",
+      en: "Built a responsive Vue 3 + Tailwind CSS game featuring click-or-drag slot sorting, single-step auto-hints, toggleable weight badges, a 12-item Food Encyclopedia tab, per-level star progress, and Canvas Confetti celebrations.",
+    },
+    highlights: {
+      id: [
+        "5 level progresif + mode 'Acak Seru' dengan sistem skor & lencana bintang penyelesaian level.",
+        "Interaksi ganda ramah sentuh (klik atau drag-and-drop) lengkap dengan tombol 'Bantu 1 Urutan' & toggle berat.",
+        "Modul Kamus Makanan interaktif untuk belajar fakta porsi dan ukuran makanan berbagai hewan.",
+        "Efek suara toggleable, umpan balik animasi tombol 3D, dan selebrasi Canvas Confetti.",
+      ],
+      en: [
+        "5 progressive difficulty levels plus randomized challenge mode with score & star completion badges.",
+        "Accessible click-or-drag sorting paired with single-step smart hints and optional weight comparison indicators.",
+        "Built-in interactive Food Encyclopedia tab reinforcing learning beyond gameplay.",
+        "Toggleable Web Audio feedback, tactile 3D micro-interactions, and Canvas Confetti rewards.",
+      ],
+    },
+    impact: {
+      id: "Memperlihatkan kemampuan merancang micro-interaction yang menyenangkan dan adaptif lintas framework (Vue 3).",
+      en: "Demonstrates playful gamified UX craftsmanship and framework versatility extending into Vue 3.",
+    },
+    techStack: [
+      "Vue 3",
+      "Tailwind CSS",
+      "JavaScript",
+      "Canvas Confetti",
+      "Gamified UX",
+    ],
+  },
+  {
+    id: "pusaka-nusantara-rpg",
+    slug: "pusaka-nusantara-2d-rpg",
+    section: "labs",
+    category: "app",
+    categoryLabel: { id: "Python Game Engine", en: "Python Game Engine" },
+    title: "Pusaka Nusantara — 2D Turn-Based RPG",
+    subtitle: {
+      id: "Engine RPG 2D berbasis Python & Pygame dengan grafis pixel-art Nusantara, sistem kelemahan elemen, dan scene manager.",
+      en: "Custom Python & Pygame 2D RPG engine featuring Nusantara pixel art, elemental weakness matrices, and modular scenes.",
+    },
+    year: "2026",
+    role: { id: "Python Developer & Systems Architect", en: "Python Developer & Systems Architect" },
+    client: "Python & Game Architecture Lab",
+    displayUrl: "local-lab/pusaka-nusantara-rpg",
+    embeddable: false,
+    image: "/images/projects/pusaka-nusantara.png",
+    accentColor: "#eab308",
+    summary: {
+      id: "Proyek game RPG 2D desktop yang dibangun dari nol dengan Python dan Pygame: menampilkan dunia fantasi Nusantara bergaya pixel-art, tabel kelemahan 9 elemen (1.5× weakness multiplier), serta arsitektur scene modular.",
+      en: "Desktop 2D RPG built from scratch in Python and Pygame featuring rich Nusantara pixel-art environments, a 9-element weakness/resistance combat matrix (1.5× multipliers), and clean modular scene architecture.",
+    },
+    challenge: {
+      id: "Membangun struktur game desktop 60 FPS yang rapi dan mudah dikembangkan (Title, World Map, Battle, Menu, Save/Load JSON) lengkap dengan pipeline manajemen aset sprite & background.",
+      en: "Architecting a maintainable 60 FPS desktop game loop with distinct scenes (Title, World Exploration, Turn-Based Battle, Party Menu, JSON persistence) and a structured sprite/background asset pipeline.",
+    },
+    solution: {
+      id: "Menerapkan pola arsitektur modular (`AssetManager`, `GameState`, `TitleScene`, `WorldScene`, `BattleScene`, `MenuScene`), tabel kelemahan elemen terstruktur, serta palet UI bertema Emas Nusantara × Hologram A.R.Y.A.",
+      en: "Implemented clean modular separation (`AssetManager`, `GameState`, `TitleScene`, `WorldScene`, `BattleScene`, `MenuScene`), data-driven enemy/hero definitions, elemental combat math, and a custom Nusantara Gold × Cyber Cyan HUD palette.",
+    },
+    highlights: {
+      id: [
+        "Arsitektur Scene Manager 60 FPS modular dengan transisi mulus antara Eksplorasi, Pertarungan, dan Menu Party.",
+        "Sistem pertarungan strategis dengan 9 elemen & tabel kelemahan/resistensi (`ELEMENT_CHART` 1.5× damage).",
+        "Aset visual pixel-art kustom: latar Candi, Hutan, serta belasan sprite hero & monster mitologi Nusantara.",
+        "Sistem simpan/muat progres permainan persisten berbasis JSON (`savegame.json`).",
+      ],
+      en: [
+        "Modular 60 FPS Scene Manager transitioning cleanly between World Exploration, Turn-Based Battle, and Party Menus.",
+        "Strategic combat mechanics driven by a 9-element weakness & resistance chart (1.5× damage multipliers).",
+        "Custom Nusantara pixel-art backgrounds and hero/mythological creature sprite sets managed via `AssetManager`.",
+        "Persistent JSON save/load state architecture (`savegame.json`).",
+      ],
+    },
+    impact: {
+      id: "Memperkuat fondasi pemrograman berorientasi objek (OOP) Python dan arsitektur sistem di luar ekosistem JavaScript/PHP.",
+      en: "Demonstrates strong Python OOP architecture and interactive systems design beyond JavaScript and PHP ecosystems.",
+    },
+    techStack: [
+      "Python",
+      "Pygame",
+      "OOP Architecture",
+      "Asset Pipeline",
+      "JSON Persistence",
+    ],
+  },
+];
+
+export const EXPERIENCES: ExperienceItem[] = [
+  {
+    id: "dretail",
+    role: {
+      id: "Front-End Developer & UI Specialist",
+      en: "Front-End Developer & UI Specialist",
+    },
+    company: "dRetail",
+    division: {
+      id: "Modul Inventory & Accounting · Ekosistem Point of Sale (POS)",
+      en: "Inventory & Accounting Modules · Point of Sale (POS) Ecosystem",
+    },
+    period: {
+      id: "2021 – Sekarang (5 Tahun)",
+      en: "2021 – Present (5 Years)",
+    },
+    location: "Bandung, Indonesia",
+    summary: {
+      id: "Bertanggung jawab atas kualitas antarmuka dan pengembangan fitur inti pada ekosistem POS ritel dRetail, mencakup modul Inventory, Accounting Backoffice secara Full-Stack, serta Situs Resmi perusahaan.",
+      en: "Driving UI craftsmanship and core feature engineering across the dRetail POS ecosystem—spanning Inventory interfaces, Full-Stack Accounting Backoffice workflows, and the official company web platform.",
+    },
+    bullets: {
+      id: [
+        "Mengembangkan dan memelihara antarmuka pengguna (UI) yang interaktif, responsif, dan ramah pengguna untuk operasional sistem inventaris dan akuntansi ritel.",
+        "Mengembangkan Modul Accounting Backoffice dRetail (backoffice.dretail.id/admin) secara Full-Stack, meliputi General Ledger, Chart of Accounts (COA) hierarkis, posting jurnal, mutasi kas/bank, cash clearance, dan laporan keuangan komprehensif.",
+        "Merancang dan membangun Situs Resmi dRetail (dretail.id) sebagai UI Specialist & Web Developer untuk mempresentasikan ekosistem POS dan solusi otomasi bisnis ritel modern.",
+        "Mengimplementasikan alur kerja pengembangan berbantuan AI untuk mempercepat penulisan kode, meningkatkan konsistensi arsitektur, dan mengoptimalkan performa aplikasi.",
+      ],
+      en: [
+        "Engineered and maintained interactive, responsive, operator-friendly UIs powering daily retail inventory and accounting operations.",
+        "Built the dRetail Accounting Backoffice module (backoffice.dretail.id/admin) Full-Stack, covering General Ledger, hierarchical Chart of Accounts (COA), journal posting, cash/bank mutations, cash clearance, and comprehensive financial reports.",
+        "Designed and developed the Official dRetail Website (dretail.id) as UI Specialist & Web Developer to showcase modern POS and retail automation solutions.",
+        "Adopted and refined AI-assisted development workflows to boost coding velocity, enforce consistency, and optimize front-end performance.",
+      ],
+    },
+    highlights: [
+      "Inventory & Accounting UI",
+      "General Ledger & COA",
+      "Full-Stack Delivery",
+      "dretail.id Official Web",
+      "AI-Augmented Workflow",
+    ],
+  },
+];
+
+export const EDUCATION: EducationItem[] = [
+  {
+    id: "maranatha",
+    degree: {
+      id: "S1 Teknik Informatika",
+      en: "B.Sc. in Informatics Engineering",
+    },
+    institution: "Universitas Kristen Maranatha · Bandung",
+    period: "2014 – 2021",
+    type: "degree",
+    note: {
+      id: "Termasuk cuti akademik resmi 1 semester seleksi atlet Voli Indoor Kontingen Kab. Bandung (PORDA Jabar XIII 2018) & penyesuaian kelulusan masa pandemi Covid-19.",
+      en: "Includes an official 1-semester athletic leave for Kab. Bandung Indoor Volleyball Squad selection (PORDA West Java XIII 2018) and Covid-19 graduation scheduling adjustments.",
+    },
+  },
+  {
+    id: "sap01",
+    degree: {
+      id: "SAP Course (SAP01) — Sertifikasi Profesional",
+      en: "SAP Course (SAP01) — Professional Certification",
+    },
+    institution: "SAP Fundamentals & Enterprise Systems",
+    period: "2018",
+    type: "certification",
+    note: {
+      id: "Fondasi proses bisnis ERP enterprise yang memperkuat pemahaman sistem Inventory & Accounting modern.",
+      en: "Enterprise ERP business process foundation strengthening domain fluency in modern Inventory & Accounting software.",
+    },
+  },
+];
+
+export const SKILL_GROUPS: SkillGroup[] = [
+  {
+    id: "frontend",
+    title: {
+      id: "Front-End & UI Engineering",
+      en: "Front-End & UI Engineering",
+    },
+    description: {
+      id: "Merancang sistem antarmuka presisi, tipografi terukur, micro-interaction halus, dan performa lintas perangkat.",
+      en: "Building precision design systems, clean typography, subtle micro-interactions, and responsive cross-device UX.",
+    },
+    icon: "layout",
+    skills: [
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "HTML5 / CSS3",
+      "Framer Motion",
+      "Vue 3",
+      "Three.js (WebGL)",
+    ],
+  },
+  {
+    id: "backend",
+    title: {
+      id: "Full-Stack & Cross-Platform",
+      en: "Full-Stack & Cross-Platform",
+    },
+    description: {
+      id: "Menghubungkan antarmuka modern dengan logika bisnis solid, API bersih, hingga aplikasi PWA berbasis Flutter.",
+      en: "Connecting modern interfaces with resilient business logic, clean REST APIs, and cross-device Flutter PWAs.",
+    },
+    icon: "server",
+    skills: [
+      "PHP",
+      "Laravel",
+      "CodeIgniter",
+      "Flutter (PWA)",
+      "Python",
+      "Odoo",
+      "REST API Integration",
+      "MQL5 (MT5)",
+    ],
+  },
+  {
+    id: "database",
+    title: {
+      id: "Database, Analytics & Tooling",
+      en: "Database, Analytics & Tooling",
+    },
+    description: {
+      id: "Perancangan skema data relasional, kontrol versi terstruktur, deployment modern, dan telemetri konversi.",
+      en: "Relational schema modeling, disciplined version control, modern cloud deployment, and conversion analytics.",
+    },
+    icon: "database",
+    skills: [
+      "PostgreSQL",
+      "MySQL",
+      "SQLite",
+      "Database Design",
+      "Git & GitHub",
+      "Vercel",
+      "GA4 & Meta Pixel",
+    ],
+  },
+  {
+    id: "craft",
+    title: {
+      id: "Kompetensi Inti & AI Workflow",
+      en: "Core Craft & AI Workflow",
+    },
+    description: {
+      id: "Memadukan kepekaan desain UI/UX, pemahaman domain akuntansi/POS, serta optimalisasi alur kerja berbantuan AI.",
+      en: "Blending UI/UX sensitivity, retail accounting/POS domain fluency, and AI-assisted engineering precision.",
+    },
+    icon: "sparkles",
+    skills: [
+      "UI/UX Development",
+      "Full-Stack Web Dev",
+      "Accounting & POS Domain",
+      "Pixel-Perfect Slicing",
+      "AI-Assisted Engineering",
+      "Performance Optimization",
+    ],
+  },
+];
+
+export const UI_COPY = {
+  nav: {
+    work: { id: "Karya", en: "Work" },
+    labs: { id: "Eksperimen", en: "Labs" },
+    experience: { id: "Pengalaman", en: "Experience" },
+    skills: { id: "Keahlian", en: "Skills" },
+    contact: { id: "Kontak", en: "Contact" },
+    resume: { id: "CV", en: "Resume" },
+  },
+  hero: {
+    ctaPrimary: { id: "Lihat Karya Pilihan", en: "Explore Selected Work" },
+    ctaSecondary: { id: "Hubungi Saya", en: "Get in Touch" },
+    ctaResume: { id: "Lihat / Cetak CV", en: "View / Print CV" },
+    localTimeLabel: { id: "Waktu Lokal Bandung", en: "Bandung Local Time" },
+    copyEmail: { id: "Salin Email", en: "Copy Email" },
+    copied: { id: "Email Tersalin!", en: "Email Copied!" },
+    chatWhatsapp: { id: "Chat WhatsApp", en: "WhatsApp Chat" },
+    focusLabel: { id: "Fokus Utama", en: "Primary Focus" },
+    focusValue: {
+      id: "UI · Full-Stack · POS & CRM",
+      en: "UI · Full-Stack · POS & CRM",
+    },
+  },
+  work: {
+    eyebrow: { id: "01 / KARYA PILIHAN", en: "01 / SELECTED WORK" },
+    title: {
+      id: "Sistem Produksi & Aplikasi Web Pilihan",
+      en: "Production Systems & Selected Web Applications",
+    },
+    subtitle: {
+      id: "Dari sistem akuntansi POS enterprise, storefront e-commerce dengan CRM real-time, hingga portal pendidikan dan layanan kesehatan digital.",
+      en: "Spanning enterprise POS accounting backoffices, conversion-focused e-commerce & CRM suites, educational portals, and digital healthcare platforms.",
+    },
+    filters: {
+      all: { id: "Semua", en: "All" },
+      enterprise: { id: "Enterprise & POS", en: "Enterprise & POS" },
+      ecommerce: { id: "E-Commerce & CRM", en: "E-Commerce & CRM" },
+      "public-service": { id: "Edukasi & Kesehatan", en: "Education & Health" },
+      app: { id: "Web & Mobile App", en: "Web & Mobile App" },
+    },
+    viewCaseStudy: { id: "Lihat Studi Kasus", en: "View Case Study" },
+    liveDemo: { id: "Demo Live", en: "Live Demo" },
+  },
+  labs: {
+    eyebrow: { id: "02 / EKSPERIMEN & LABS", en: "02 / EXPERIMENTS & LABS" },
+    title: {
+      id: "Eksplorasi Kreatif, Slicing Presisi & Rekayasa Lintas Domain",
+      en: "Creative Exploration, Pixel-Perfect Slicing & Cross-Domain Engineering",
+    },
+    subtitle: {
+      id: "Di luar proyek bisnis inti, saya aktif mengeksplorasi batas teknis melalui indikator algoritmik MetaTrader 5, game 3D WebGL, slicing 1:1, dan game edukasi interaktif.",
+      en: "Beyond core business products, I push technical craft through algorithmic MetaTrader 5 indicators, browser 3D WebGL RPGs, pixel-accurate UI slicing, and interactive EdTech games.",
+    },
+    inspectLab: { id: "Detail Teknis", en: "Technical Breakdown" },
+  },
+  modal: {
+    overview: { id: "Ringkasan", en: "Overview" },
+    challenge: { id: "Tantangan", en: "The Challenge" },
+    solution: { id: "Solusi & Arsitektur", en: "Solution & Architecture" },
+    highlights: { id: "Fitur & Implementasi Utama", en: "Key Engineering Highlights" },
+    impact: { id: "Dampak & Nilai Craft", en: "Impact & Craft Outcome" },
+    role: { id: "Peran", en: "Role" },
+    year: { id: "Tahun", en: "Year" },
+    client: { id: "Domain / Klien", en: "Domain / Client" },
+    stack: { id: "Teknologi", en: "Tech Stack" },
+    visualMode: { id: "Pratinjau Visual", en: "Visual Preview" },
+    liveMode: { id: "Coba Live Interactive", en: "Try Live Interactive" },
+    openExternal: { id: "Buka di Tab Baru", en: "Open Live Site" },
+    prevProject: { id: "Proyek Sebelumnya", en: "Previous" },
+    nextProject: { id: "Proyek Berikutnya", en: "Next" },
+    iframeHint: {
+      id: "Pratinjau interaktif live — klik tombol di kanan atas jika ingin membuka layar penuh.",
+      en: "Live interactive embed — open in a new tab for the full-screen experience.",
+    },
+  },
+  experience: {
+    eyebrow: { id: "03 / PENGALAMAN & PENDIDIKAN", en: "03 / EXPERIENCE & EDUCATION" },
+    title: {
+      id: "Rekam Jejak Profesional & Fondasi Akademik",
+      en: "Professional Journey & Academic Foundation",
+    },
+    workHeading: { id: "Pengalaman Kerja", en: "Work Experience" },
+    eduHeading: { id: "Pendidikan & Sertifikasi", en: "Education & Certification" },
+  },
+  skills: {
+    eyebrow: { id: "04 / KEAHLIAN & ARSITEKTUR", en: "04 / CAPABILITIES & STACK" },
+    title: {
+      id: "Keahlian Teknis & Filosofi Engineering",
+      en: "Technical Stack & Engineering Philosophy",
+    },
+    subtitle: {
+      id: "Memadukan ketelitian User Interface Specialist dengan kemampuan eksekusi Full-Stack yang pragmatis dan terukur.",
+      en: "Combining a User Interface Specialist's visual rigor with pragmatic, production-proven Full-Stack execution.",
+    },
+    aiStripTitle: {
+      id: "Alur Kerja Pengembangan Berbantuan AI",
+      en: "AI-Augmented Engineering Workflow",
+    },
+    aiStripDesc: {
+      id: "Secara aktif memanfaatkan tools AI modern untuk code review, percepatan prototyping UI, pencegahan regresi, dan refactor arsitektur yang bersih—tanpa mengorbankan pemahaman mendalam terhadap setiap baris kode.",
+      en: "Actively integrating modern AI tooling into UI prototyping, code review, regression prevention, and clean refactoring—multiplying delivery speed while maintaining full architectural ownership.",
+    },
+  },
+  contact: {
+    eyebrow: { id: "05 / KONTAK & KOLABORASI", en: "05 / CONTACT & COLLABORATION" },
+    title: {
+      id: "Mari Bangun Produk Digital yang Presisi Bersama.",
+      en: "Let's Build Something Crisp and Resilient Together.",
+    },
+    subtitle: {
+      id: "Sedang mencari Front-End / Full-Stack Developer atau UI Specialist untuk tim Anda, atau ingin mendiskusikan proyek web custom? Hubungi langsung melalui email atau WhatsApp.",
+      en: "Looking for a Front-End / Full-Stack Developer or UI Specialist for your team, or planning a custom web application? Reach out directly via email or WhatsApp.",
+    },
+    directTitle: { id: "Kontak Langsung", en: "Direct Channels" },
+    formTitle: { id: "Kirim Pesan Cepat", en: "Quick Inquiry Composer" },
+    nameLabel: { id: "Nama / Perusahaan", en: "Name / Company" },
+    namePlaceholder: { id: "Contoh: Budi · HR / Founder", en: "e.g. Alex · Engineering Lead" },
+    topicLabel: { id: "Keperluan", en: "Topic" },
+    topics: {
+      id: ["Peluang Full-Time", "Proyek Web / UI Freelance", "Konsultasi Sistem POS/CRM", "Lainnya"],
+      en: ["Full-Time Opportunity", "Custom Web / UI Project", "POS / CRM Consultation", "Other"],
+    },
+    messageLabel: { id: "Pesan Singkat", en: "Brief Message" },
+    messagePlaceholder: {
+      id: "Ceritakan sedikit tentang peran, proyek, atau timeline yang Anda rencanakan...",
+      en: "Tell me briefly about the role, project scope, or timeline you have in mind...",
+    },
+    sendViaWa: { id: "Kirim via WhatsApp", en: "Send via WhatsApp" },
+    sendViaEmail: { id: "Kirim via Email", en: "Send via Email" },
+    footerNote: {
+      id: "Dirancang & dibangun oleh Lucky Metha Purnomo dengan Next.js, Tailwind CSS & Framer Motion.",
+      en: "Designed & engineered by Lucky Metha Purnomo with Next.js, Tailwind CSS & Framer Motion.",
+    },
+    backToTop: { id: "Kembali ke Atas", en: "Back to Top" },
+  },
+};

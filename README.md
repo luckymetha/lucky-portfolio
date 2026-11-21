@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lucky Metha Purnomo — Portfolio Web App
 
-## Getting Started
+Modern minimalist, dual-theme (Dark & Light), bilingual (**ID / EN**) portfolio built with **Next.js (App Router)**, **TypeScript**, **Tailwind CSS v4**, and **Framer Motion**.
 
-First, run the development server:
+## Highlights
+
+- **Selected Production Work (`#work`)**: Interactive category filtering and rich case-study modals for 7 flagship products (BOOSTRA, dRetail Accounting Backoffice, dRetail Official Website, ELC Indonesia, Sistem Informasi Klinik Dr. Kosim Syarif, SiNovel, PWA Combiphar R&D) with **Visual Preview** and **Live Interactive Embed** modes.
+- **Experiments & Labs (`#labs`)**: Showcases cross-domain engineering craftsmanship including Pixel-Perfect Slicing (Undangan Digital), MetaTrader 5 MQL5 (XAUUSD SMC Probability Monitor), Three.js 3D WebGL (Chrono Pusaka 3D), Vue 3 EdTech (Pesta Porsi Hewan), and Python Pygame (Pusaka Nusantara 2D RPG).
+- **Dual Theme + Bilingual**: Instant Dark/Light toggle (`next-themes`) and Indonesian/English switcher (`ID / EN`) persisted in `localStorage`.
+- **Printable ATS Resume (`/resume`)**: Dedicated `/resume` route optimized for `@media print` (Print / Save as PDF).
+
+## Quick Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3005](http://localhost:3005).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Personalizing Links & Photo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Open `src/data/portfolio-data.ts` and fill in `linkedinUrl` and `githubUrl` inside `PROFILE`.
+2. Replace `public/images/profile.jpg` anytime if you want to update your profile portrait.
 
-## Learn More
+## Deploy to Vercel
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Push this folder to a GitHub repository and import it directly in [Vercel](https://vercel.com) — zero extra configuration required.
