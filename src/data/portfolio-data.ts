@@ -20,7 +20,7 @@ export const PROFILE = {
   linkedinDisplay: "linkedin.com/in/lucky-metha-purnomo-a14376219",
   githubUrl: "https://github.com/luckymetha",
   githubDisplay: "github.com/luckymetha",
-  portfolioUrl: "",
+  portfolioUrl: "https://lucky-portfolio-mu.vercel.app",
   roleTagline: {
     id: "Software Developer · Front-End & Full-Stack Web Developer · UI Specialist",
     en: "Software Developer · Front-End & Full-Stack Web Developer · UI Specialist",
